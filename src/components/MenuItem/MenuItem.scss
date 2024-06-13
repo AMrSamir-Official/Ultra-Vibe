@@ -1,0 +1,43 @@
+.menu-item {
+  width: 215px;
+  display: flex;
+  height: 260px;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+
+  img {
+    height: 111px;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .txt {
+    padding: 20px;
+
+    h4 {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+  }
+}

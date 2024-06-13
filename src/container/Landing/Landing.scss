@@ -1,0 +1,105 @@
+.app__About {
+  margin: auto;
+  width: 100%;
+  padding-top: 160px;
+  padding-bottom: 10px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  text-align: center;
+  color: white;
+  align-items: center;
+  justify-content: space-evenly;
+  text-transform: capitalize;
+  @media (min-width: 767px) {
+    min-height: 100vh;
+  }
+  span {
+    animation: fadeIn 1s ease forwards;
+    filter: drop-shadow(2px 4px 6px black);
+    position: relative;
+    font-size: 2rem;
+    &:after,
+    &::before {
+      position: absolute;
+      top: 50%;
+      right: -80px;
+      transform: translateY(-50%);
+      display: block;
+      width: 70px;
+      height: 1px;
+      background: #fff;
+      content: "";
+    }
+    &:before {
+      right: 0;
+      left: -80px;
+    }
+  }
+  h1 {
+    font-size: 5rem;
+    text-align: center;
+    filter: drop-shadow(2px 4px 6px black);
+    animation: slideIn 1s ease forwards;
+    @media (max-width: 767px) {
+      font-size: 2rem;
+    }
+  }
+  p {
+    font-size: 1.4rem;
+    filter: drop-shadow(2px 4px 6px black);
+    animation: fadeIn 1s ease forwards;
+    @media (max-width: 767px) {
+      font-size: 1.2rem;
+    }
+  }
+  button {
+    padding: 12px 28px;
+    text-transform: capitalize;
+    color: white;
+    background: #6363bc;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.3rem;
+    transition: 0.7s;
+    cursor: pointer;
+    animation: scaleIn 1s ease forwards;
+
+    &:hover {
+      background: #5959c1;
+      transform: scale(1.02);
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,145 @@
+// Reset default margin and padding
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+}
+
+.description-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  animation: slideIn 1s ease forwards;
+
+  @media (min-width: 767px) {
+    padding: 40px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+
+    h1 {
+      font-size: 42px;
+      color: #333;
+      font-weight: 700;
+      letter-spacing: -1px;
+      text-transform: uppercase;
+    }
+  }
+
+  .description-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+
+    .description-content {
+      flex: 1 1 100%;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+
+      h2 {
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 20px;
+      }
+    }
+
+    .description-image {
+      flex: 1 1 100%;
+      margin-left: 0;
+
+      img {
+        width: 100%;
+        border-radius: 12px;
+      }
+    }
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 60px;
+
+    p {
+      font-size: 14px;
+      color: #999;
+    }
+  }
+}
+
+// Media Queries
+@media (min-width: 768px) {
+  .description-section {
+    .description-content,
+    .description-image {
+      flex: 1 1 45%;
+    }
+
+    .description-image {
+      margin-left: 40px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .description-section {
+    .description-content {
+      flex: 1 1 55%;
+    }
+
+    .description-image {
+      flex: 1 1 40%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .description-section {
+    .description-content {
+      margin-bottom: 20px;
+    }
+
+    .description-image {
+      margin-left: 0;
+    }
+  }
+
+  header h1 {
+    font-size: 32px;
+  }
+
+  .description-section .description-content h2 {
+    font-size: 24px;
+  }
+
+  .description-section .description-content p {
+    font-size: 16px;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

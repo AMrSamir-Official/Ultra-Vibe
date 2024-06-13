@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+  font-family: "Open Sans", sans-serif; /* Changed font-family to Open Sans */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col {
+  flex: 0 0 calc(33.33% - 20px);
+
+  h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+
+  p {
+    margin-bottom: 10px;
+    color: #ccc;
+  }
+
+  &.contact {
+    border-right: 1px solid #555;
+    padding-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  &.hours {
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+
+  &.social {
+    padding-left: 20px;
+    svg {
+      transition: 0.5s;
+    }
+    .social-icons {
+      a {
+        color: #fff;
+        font-size: 24px;
+        margin-right: 10px;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #000080;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 24px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+.portfolio-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.portfolio-link a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.portfolio-link a:hover {
+  color: #f00;
+}
+
+.col.social .social-icons a.portfolio {
+  text-decoration: none;
+  font-size: 1rem;
+  text-wrap: nowrap;
+  text-shadow: 1px 1px 12px #00caff;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.x svg {
+  background: #494343;
+  border-radius: 35%;
+  &:hover {
+    background: black;
+    color: white;
+  }
+}
