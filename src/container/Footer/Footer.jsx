@@ -61,7 +61,7 @@ function Footer() {
                 <FiX />
               </a>
               <a
-                href="https://ultra-vibe.vercel.app"
+                href="https://amrsamir.vercel.app"
                 className="portfolio"
                 target="_blank"
                 rel="noopener noreferrer"
